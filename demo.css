@@ -1,0 +1,166 @@
+.hide-scroll::-webkit-scrollbar {
+    display: none !important;
+}
+
+.duration-300 {
+    transition: all linear 300ms;
+}
+
+.text-gray-600 {
+    color: gray;
+}
+
+.hover-add:hover {
+    color: blue;
+}
+
+.text-3xl {
+    font-size: 30px;
+}
+
+.text-blue-600 {
+    color: rgb(62, 62, 221);
+}
+
+.text-xl,
+.text-lg,
+.text-base {
+    font-size: 16px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.max-w-100 {
+    max-width: 100px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+input::placeholder {
+    color: rgb(57, 50, 50);
+}
+
+.nav-search {
+    max-width: 100px;
+    border-radius: 6px;
+}
+
+.nav-number {
+    max-width: 60px;
+    border-radius: 6px;
+}
+
+.h-6 {
+    height: 24px;
+}
+
+.w-5 {
+    width: 20px;
+}
+
+.ps-30 {
+    padding-left: 30px !important;
+}
+
+.h-8 {
+    height: 32px;
+}
+
+.w-8 {
+    width: 32px;
+}
+
+.navbar-mobile a {
+    color: white !important;
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}
+
+.next-button:hover {
+    color: red !important;
+}
+
+.button-plus,
+.menu-container {
+    border: none;
+    background-color: transparent;
+}
+
+label:focus {
+    outline: none !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media (max-width:991.98px) {
+    .navbar-mobile {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        background: black;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        transition: right 0.5s ease;
+    }
+
+    .menu-container:focus-within .navbar-mobile {
+        right: 0;
+    }
+
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon:focus {
+        outline: none;
+    }
+
+
+}
+
+@media (min-width:768px) {
+    .text-lg {
+        font-size: 18px !important;
+    }
+
+    .max-w-100 {
+        max-width: 217px;
+    }
+
+    .nav-search {
+        max-width: 160px;
+    }
+
+    .w-7 {
+        width: 28px;
+    }
+}
+
+@media (min-width:992px) {
+    .text-xl {
+        font-size: 20px !important;
+    }
+
+
+}
+
+@media (min-width:1200px) {
+    .text-xl {
+        font-size: 20px !important;
+    }
+
+    .nav-search {
+        max-width: 217px;
+    }
+}
