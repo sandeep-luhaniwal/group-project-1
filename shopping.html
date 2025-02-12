@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <header class="max-w-[1332px] mx-auto px-4">
+            <div class="flex justify-between items-center py-2">
+                <a href="/" class="text-3xl text-orange-600 font-bold">Tala <span class="text-blue-600"> 7</span></a>
+                <div class="hidden lg:flex gap-6 xl:gap-8">
+                    <a href="/"
+                        class="text-base text-gray-600 duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Home</a>
+                    <a href="/about.html" class="text-base duration-300 text-blue-600 md:text-lg lg:text-xl">About</a>
+                    <a href="#"
+                        class="text-base flex text-gray-600 items-center duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Brands
+                        <span class="ms-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor"
+                                        d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="text-base flex items-center text-gray-600 duration-300 hover:text-blue-600 md:text-lg lg:text-xl">More
+                        <span class="ms-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor"
+                                        d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="text-base text-gray-600 duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Contact</a>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div class="relative">
+                        <input id="search" type="search" placeholder='Search' class='rounded max-w-[100px] sm:max-w-[217px] border-[1px] outline-none text-balck border-gray-600 bg-white placeholder:text-balck
+                       pe-1 sm:pe-3 py-1.5 md:py-3 pl-8 sm:pl-10' />
+                        <label for="search" class="absolute start-1 top-1/2 -translate-y-1/2 cursor-pointer z-20">
+                            <svg class="w-6 h-6 md:h-8 md:w-8" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input id="number" type="number" placeholder='0' class='rounded max-w-14 sm:max-w-[80px] border-[1px] outline-none text-balck border-gray-600 bg-white placeholder:text-balck
+                        pe-1 sm:pe-3 py-1.5 md:py-3 pl-8 sm:pl-10' />
+                        <label for="number" class="absolute start-1 top-1/2 -translate-y-1/2 cursor-pointer z-20">
+                            <svg class=" h-6 w-5 sm:w-7" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5a5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2" />
+                            </svg>
+                        </label>
+                    </div>
+                    <img src="./login.png" alt="login"
+                        class="border hidden sm:flex rounded-full bg-black cursor-pointer h-12 w-12">
+                    <!-- Container for focus-within -->
+                    <div class="menu-container lg:hidden">
+                        <div class="menu-icon" tabindex="0">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <path
+                                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor"
+                                        d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Navbar for mobile -->
+                        <div class="navbar-mobile pt-10 p-4 ">
+                            <div class="flex flex-col gap-5">
+                                <a href="#"
+                                    class="text-base duration-300 text-white hover:text-blue-600 md:text-lg lg:text-xl">Home</a>
+                                <a href="#"
+                                    class="text-base duration-300 text-white hover:text-blue-600 md:text-lg lg:text-xl">About</a>
+                                <a href="#"
+                                    class="text-base flex  items-center text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Brands
+                                    <span class="ms-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                                <path fill="white"
+                                                    d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#"
+                                    class="text-base  flex items-center text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">More
+                                    <span class="ms-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                                <path fill="white"
+                                                    d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#"
+                                    class="text-base  text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="max-w-[1332px] mx-auto px-4 py-10">
+                <!-- Shopping Cart Header -->
+                <h1 class="text-2xl font-bold mb-6">Shopping Cart</h1>
+
+                <!-- Shopping Cart Items Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Cart Items -->
+                    <div class="md:col-span-2 space-y-4">
+                        <!-- Product Row -->
+
+                      <div class="flex overflow-auto hide-scroll">
+                        <table class="w-full xl:w-[90%]">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 text-left text-gray-400/60">Product</th>
+                                    <th class="px-4 py-2 text-center text-gray-400/60">Quantity</th>
+                                    <th class="px-4 py-2 text-right text-gray-400/60">Price</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t">
+                                    <td class="px-4 py-2 text-gray-700 text-nowrap">Seven By M.S.Dhoni W...</td>
+                                    <td class="px-4 py-2 text-center text-gray-700">
+                                        <button class="px-1 font-bold">-</button>
+                                        <span class="mx-1 font-bold">1</span>
+                                        <button class="px-1 font-bold">+</button>
+                                    </td>
+                                    <td class="px-4 py-2 text-right text-gray-700">₹4,999</td>
+                                    <td class="xl:ps-20 py-2 text-center">
+                                        <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="red" stroke-linecap="round" stroke-width="1.5"
+                                                d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07" />
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 text-gray-700 text-nowrap">Seven By M.S.Dhoni W...</td>
+                                    <td class="px-4 py-2 text-center text-gray-700">
+                                        <button class="px-1 font-bold">-</button>
+                                        <span class="mx-1 font-bold">2</span>
+                                        <button class="px-1 font-bold">+</button>
+                                    </td>
+                                    <td class="px-4 py-2 text-right text-gray-700">₹4,999</td>
+                                    <td class="xl:ps-20 py-2 text-center">
+                                        <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="red" stroke-linecap="round" stroke-width="1.5"
+                                                d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07" />
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                                <td class="px-4 py-2 text-gray-700 text-nowrap">Seven By M.S.Dhoni W...</td>
+                                <td class="px-4 py-2 text-center text-gray-700">
+                                    <button class="px-1 font-bold">-</button>
+                                    <span class="mx-1 font-bold">1</span>
+                                    <button class="px-1 font-bold">+</button>
+                                </td>
+                                <td class="px-4 py-2 text-right text-gray-700">₹4,999</td>
+                                <td class="xl:ps-20 py-2 text-center">
+                                    <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="red" stroke-linecap="round" stroke-width="1.5"
+                                            d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07" />
+                                    </svg>
+                                </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                      </div>
+
+                        <!-- Additional rows can be repeated as needed -->
+                    </div>
+
+                    <!-- Order Summary Section -->
+                    <div class="bg-white">
+                        <div class=" bg-white p-6 rounded-lg border border-black/50">
+                            <h2 class="text-sm mb-3">Enter Coupon Code</h2>
+
+                            <!-- Coupon Section -->
+                            <div class="mb-4 flex gap-3">
+                                <input type="text" placeholder="Coupon Code"
+                                    class="w-full p-3 border rounded-lg focus:outline-none">
+                                <button
+                                    class="text-nowrap px-3 bg-blue-500 text-white  py-3 rounded-lg hover:bg-blue-600 transition duration-300">
+                                    Apply Coupon
+                                </button>
+                            </div>
+
+                            <!-- Price Breakdown -->
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex justify-between">
+                                    <span>Sub Total</span>
+                                    <span>₹4,700</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Taxes (if applicable)</span>
+                                    <span>₹199</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Discount</span>
+                                    <span>₹0</span>
+                                </div>
+                                <div class="flex justify-between text-lg font-bold">
+                                    <span>Total</span>
+                                    <span>₹4,999</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pay Button -->
+                        <button
+                            class="w-full bg-orange-500 text-white p-4 mt-6 rounded-lg text-lg font-bold hover:bg-orange-600 transition duration-300">
+                            Pay Now ₹4,999
+                        </button>
+                        <div class="flex justify-center gap-2">
+                            <!-- <img src="./gpay.png" alt="gapy" class="max-w-[100px] h-10"> -->
+                            <img src="./paytm.jpg" alt="gapy" class="max-w-[80px] w-full">
+                            <img src="./razpay.png" alt="gapy" class="max-w-[100px] w-full">
+                            <img src="./paytm.jpg" alt="gapy" class="max-w-[80px] w-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue Shopping Link -->
+                <div class="mt-6">
+                    <a href="/" class="text-black hover:text-blue-600 duration-300 text-xl hover:underline">
+                        < Continue Shopping</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

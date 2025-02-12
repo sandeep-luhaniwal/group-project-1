@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <header class="max-w-[1332px] mx-auto px-4">
+            <div class="flex justify-between items-center py-2">
+                <a href="/" class="text-3xl text-orange-600 font-bold">Tala <span class="text-blue-600"> 7</span></a>
+                <div class="hidden lg:flex gap-6 xl:gap-8">
+                    <a href="/"
+                        class="text-base text-gray-600 duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Home</a>
+                    <a href="/about.html" class="text-base duration-300 text-blue-600 md:text-lg lg:text-xl">About</a>
+                    <a href="#"
+                        class="text-base flex text-gray-600 items-center duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Brands
+                        <span class="ms-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor"
+                                        d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="text-base flex items-center text-gray-600 duration-300 hover:text-blue-600 md:text-lg lg:text-xl">More
+                        <span class="ms-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor"
+                                        d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="text-base text-gray-600 duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Contact</a>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div class="relative">
+                        <input id="search" type="search" placeholder='Search' class='rounded max-w-[100px] sm:max-w-[217px] border-[1px] outline-none text-balck border-gray-600 bg-white placeholder:text-balck
+                       pe-1 sm:pe-3 py-1.5 md:py-3 pl-8 sm:pl-10' />
+                        <label for="search" class="absolute start-1 top-1/2 -translate-y-1/2 cursor-pointer z-20">
+                            <svg class="w-6 h-6 md:h-8 md:w-8" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="relative">
+                        <input id="number" type="number" placeholder='0' class='rounded max-w-14 sm:max-w-[80px] border-[1px] outline-none text-balck border-gray-600 bg-white placeholder:text-balck
+                        pe-1 sm:pe-3 py-1.5 md:py-3 pl-8 sm:pl-10' />
+                        <label for="number" class="absolute start-1 top-1/2 -translate-y-1/2 cursor-pointer z-20">
+                            <svg class=" h-6 w-5 sm:w-7" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5a5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2" />
+                            </svg>
+                        </label>
+                    </div>
+                    <img src="./login.png" alt="login"
+                        class="border hidden sm:flex rounded-full bg-black cursor-pointer h-12 w-12">
+                    <!-- Container for focus-within -->
+                    <div class="menu-container lg:hidden">
+                        <div class="menu-icon" tabindex="0">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <path
+                                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="currentColor"
+                                        d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Navbar for mobile -->
+                        <div class="navbar-mobile pt-10 p-4 ">
+                            <div class="flex flex-col gap-5">
+                                <a href="/"
+                                    class="text-base text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Home</a>
+                                <a href="/about.html"
+                                    class="text-base duration-300 text-blue-600 md:text-lg lg:text-xl">About</a>
+                                <a href="#"
+                                    class="text-base flex  items-center text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Brands
+                                    <span class="ms-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                                <path fill="white"
+                                                    d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#"
+                                    class="text-base  flex items-center text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">More
+                                    <span class="ms-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                                <path fill="white"
+                                                    d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#"
+                                    class="text-base  text-white duration-300 hover:text-blue-600 md:text-lg lg:text-xl">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="max-w-[1332px] mx-auto px-4 flex-col py-10">
+                <p class="text-black/60 text-sm">Home > THALA FOR A REASON > Seven By M.S. Dhoni | Multi Color Running
+                    Shoes</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-7">
+                    <!-- Left Section: Product Image -->
+                    <div class="flex justify-center">
+                        <img src="./shoes1.png" alt="shoes" class="w-full xl:w-[400px] object-contain">
+                    </div>
+
+                    <!-- Right Section: Product Details -->
+                    <div class="space-y-6">
+                        <!-- Product Title -->
+                        <h1 class="text-black text-3xl md:text-4xl font-bold">
+                            Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes
+                        </h1>
+
+                        <!-- Product Description -->
+                        <p class="text-gray-600 text-base md:text-lg">
+                            For exceptional fit, feel and smooth transitions get going with these dual mid-sole
+                            technology shoes
+                            constructed with molded EVA sock liner, gel at heel area, rubber outsole, fused upper and
+                            breathable design.
+                        </p>
+
+                        <!-- Product Price and Discount -->
+                        <div class="text-3xl font-bold text-blue-600">
+                            ₹1,334
+                            <span class="text-green-500 text-lg ml-3">Save 12%</span>
+                        </div>
+                        <p class="text-sm text-gray-500">Inclusive of all Taxes</p>
+
+                        <!-- Quantity and Add to Cart Button -->
+                        <div class="flex items-center space-x-4">
+                            <input type="number" min="1" value="2"
+                                class="w-16 p-2 border border-gray-300 rounded-lg text-center">
+                            <a href="/shopping.html"
+                                class="bg-orange-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-orange-600 transition duration-300">
+                                ADD TO CART
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="max-w-[1332px] mx-auto px-4 mb-4">
+                <div class="flex overflow-auto hide-scroll gap-12 sm:gap-16 md:gap-20 xl:gap-24 mt-8">
+                    <img src="./shoes1.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes1.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes1.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes1.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes2.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes1.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes1.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes3.png" alt="shoe view" class=" w-28">
+                    <img src="./shoes2.png" alt="shoe view" class=" w-28">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

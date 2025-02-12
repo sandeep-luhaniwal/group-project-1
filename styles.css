@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+input.form-control, select.form-select, button.btn, ul.list-group {
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #008CFF;
+    border-color: #008CFF;
+}
+
+.btn-warning {
+    background-color: #f4a261;
+    border-color: #f4a261;
+    font-size: 18px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ffb703;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.list-group-item strong {
+    font-size: 18px;
+}

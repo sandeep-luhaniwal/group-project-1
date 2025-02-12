@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <header>
+        <div class="d-flex justify-content-between align-items-center py-3">
+          <a href="/" class="fs-1 text-warning fw-bold">Tala <span class="text-primary"> 7</span></a>
+          <div class="d-none d-lg-flex gap-3 gap-lg-4">
+            <a href="/" class="text-decoration-none fs-5 text-primary hover-add duration-300">
+              Home</a>
+            <a href="/index2.html" class="text-decoration-none fs-5 text-gray-600 hover-add duration-300">
+              About</a>
+            <a href="/index3.html"
+              class="d-flex align-items-center text-decoration-none fs-5 text-gray-600 hover-add duration-300">
+              Brands
+              <span class="ms-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                    <path fill="currentColor"
+                      d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <a href="/index4.html"
+              class="d-flex align-items-center text-decoration-none fs-5 text-gray-600 hover-add duration-300">
+              More
+              <span class="ms-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                    <path fill="currentColor"
+                      d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z" />
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <a href="#" class="text-decoration-none fs-5 text-gray-600 hover-add duration-300">Contact</a>
+          </div>
+          <div class="d-flex gap-2 gap-md-3 align-items-center">
+            <div class="position-relative">
+              <input id="search" type="search" placeholder="Search" class="nav-search py-1 ps-30" />
+              <label for="search" class="position-absolute top-50 start-0 translate-middle-y">
+                <svg class="w-6 h-6 md:h-8 md:w-8" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+                </svg>
+              </label>
+            </div>
+            <div class="position-relative">
+              <input id="number" type="number" placeholder="0" class="nav-number ps-30 py-1" />
+              <label for="number" class="position-absolute top-50 start-0 translate-middle-y">
+                <svg class="h-6 w-5 w-7 ps-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                  viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5a5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2" />
+                </svg>
+              </label>
+            </div>
+            <img src="./login.png" alt="login" class="border rounded-circle bg-black cursor-pointer d-none d-sm-block"
+              style="height: 48px; width: 48px" />
+            <!-- Container for focus-within -->
+            <div class="menu-container d-lg-none">
+              <div class="d-flex menu-container justify-content-end">
+                <button class="menu-container" id="menu-toggle">
+                  <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <g fill="none">
+                      <path
+                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                      <path fill="black"
+                        d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z" />
+                    </g>
+                  </svg>
+                </button>
+                <div class="navbar-mobile d-flex flex-column pt-5 ps-3" id="menu-items">
+                  <a href="/" class="d-block text-decoration-none text-primary hover-add duration-300 fs-5">Home</a>
+                  <a href="/index2.html"
+                    class="d-block text-decoration-none text-gray-600 hover-add duration-300 fs-5">About</a>
+                  <a href="/index3.html"
+                    class="d-block text-decoration-none text-gray-600 hover-add duration-300 fs-5">Brands</a>
+                  <a href="/index4.html"
+                    class="d-block text-decoration-none text-gray-600 hover-add duration-300 fs-5">More</a>
+                  <a href="#" class="d-block text-decoration-none text-gray-600 hover-add duration-300 fs-5">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="py-5 row justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <img src="logo.png" alt="" class="hero-logo w-100" />
+            <h1 class="heading-text">
+              7!! Thala For
+              <span class="d-block">
+                a <span class="fw-bold text">Reason!</span></span>
+            </h1>
+
+            <div class="fs-4">
+              Lorem ipsum dolor sit amet consectur.
+              <br class="d-none d-xl-flex" />
+              Pretium quisque lorem feugiat justo at ut orci<br class="d-none d-xl-flex" />
+              nisi.
+            </div>
+            <button type="submit" class="bg-black text-white py-3 px-5 my-4 rounded-pill">
+              Shop Now
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img src="shoes-removebg.png" alt="" class="bg-white w-100" />
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <footer>
+    <div class="container footer-data">
+      <div class="row h-100 w-100">
+        <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex gap-3 align-items-center">
+            <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <g fill="none">
+                <path
+                  d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                <path fill="white"
+                  d="M16.5 11a5.5 5.5 0 0 1 4.821 8.148l.386 1.311a1.005 1.005 0 0 1-1.248 1.248l-1.31-.386A5.5 5.5 0 1 1 16.5 11M11 3a9.004 9.004 0 0 1 8.708 6.719a7.5 7.5 0 0 0-9.22 11.267a8.95 8.95 0 0 1-4.097-1.255l-2.65.78a1.008 1.008 0 0 1-1.252-1.252l.78-2.65A9 9 0 0 1 11 3" />
+              </g>
+            </svg>
+            <div class="footer-text">
+              <h3 class="mb-0">2k</h3>
+              <h5 class="mb-0">Review</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex gap-3 align-items-center">
+            <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+              <g fill="white" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M4 8.25a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 2a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
+                <path
+                  d="M4.05 11a1.5 1.5 0 0 0-1.5 1.5V14a1 1 0 0 1-2 0v-1.5a3.5 3.5 0 0 1 7 0V14a1 1 0 1 1-2 0v-1.5a1.5 1.5 0 0 0-1.5-1.5M16 8.25a1 1 0 1 1 0-2a1 1 0 0 1 0 2m0 2a3 3 0 1 1 0-6a3 3 0 0 1 0 6" />
+                <path
+                  d="M15.95 11a1.5 1.5 0 0 1 1.5 1.5V14a1 1 0 1 0 2 0v-1.5a3.5 3.5 0 0 0-7 0V14a1 1 0 1 0 2 0v-1.5a1.5 1.5 0 0 1 1.5-1.5" />
+                <path
+                  d="M10.05 13.75a2.5 2.5 0 0 0-2.5 2.5v1.5a1 1 0 0 1-2 0v-1.5a4.5 4.5 0 0 1 9 0v1.5a1 1 0 1 1-2 0v-1.5a2.5 2.5 0 0 0-2.5-2.5" />
+                <path d="M10 11a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0 2a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
+              </g>
+            </svg>
+            <div class="footer-text">
+              <h3 class="mb-0">30k+</h3>
+              <h5 class="mb-0">Customer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex gap-3 align-items-center">
+            <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="m15.238 10.81l-.569 1.694a4.33 4.33 0 0 1-2.757 2.76l-1.713.569a.288.288 0 0 0 0 .548l1.713.569a4.32 4.32 0 0 1 2.736 2.738l.568 1.715a.287.287 0 0 0 .548 0l.59-1.694a4.32 4.32 0 0 1 2.735-2.738l1.714-.569a.288.288 0 0 0 0-.548l-1.692-.59a4.32 4.32 0 0 1-2.757-2.76l-.569-1.715a.29.29 0 0 0-.448-.126a.3.3 0 0 0-.099.148m-8.43-4.914l-.413 1.231a3.15 3.15 0 0 1-2.006 2.007l-1.246.414a.21.21 0 0 0 0 .398l1.246.415a3.14 3.14 0 0 1 1.99 1.99l.413 1.248a.21.21 0 0 0 .398 0l.43-1.232a3.15 3.15 0 0 1 1.99-1.99l1.245-.415a.21.21 0 0 0 0-.398l-1.23-.43A3.14 3.14 0 0 1 7.62 7.128l-.414-1.247a.21.21 0 0 0-.398.016m7.849-3.422l-.207.616a1.57 1.57 0 0 1-1.002 1.004l-.623.207a.104.104 0 0 0-.052.16a.1.1 0 0 0 .052.039l.623.207a1.57 1.57 0 0 1 .995.995l.206.624a.105.105 0 0 0 .2 0l.214-.616a1.57 1.57 0 0 1 .995-.995l.623-.207a.105.105 0 0 0 0-.2l-.615-.214a1.57 1.57 0 0 1-1.003-1.004l-.207-.624a.105.105 0 0 0-.199.008" />
+            </svg>
+            <div class="footer-text">
+              <h3 class="mb-0">High</h3>
+              <h5 class="mb-0">Quality</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="d-flex gap-3 align-items-center">
+            <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m17.8 19.817l-2.172 1.138a.392.392 0 0 1-.568-.41l.415-2.411l-1.757-1.707a.389.389 0 0 1 .217-.665l2.428-.352l1.086-2.193a.392.392 0 0 1 .702 0l1.086 2.193l2.428.352a.39.39 0 0 1 .217.665l-1.757 1.707l.414 2.41a.39.39 0 0 1-.567.411zm-11.6 0l-2.172 1.138a.392.392 0 0 1-.568-.41l.415-2.411l-1.757-1.707a.389.389 0 0 1 .217-.665l2.428-.352l1.086-2.193a.392.392 0 0 1 .702 0l1.086 2.193l2.428.352a.39.39 0 0 1 .217.665l-1.757 1.707l.414 2.41a.39.39 0 0 1-.567.411zm5.8-10l-2.172 1.138a.392.392 0 0 1-.568-.41l.415-2.411l-1.757-1.707a.389.389 0 0 1 .217-.665l2.428-.352l1.086-2.193a.392.392 0 0 1 .702 0l1.086 2.193l2.428.352a.39.39 0 0 1 .217.665l-1.757 1.707l.414 2.41a.39.39 0 0 1-.567.411z" />
+            </svg>
+            <div class="footer-text">
+              <h3 class="mb-0">4.5/5</h3>
+              <h5 class="mb-0">Rating</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>
